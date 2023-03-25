@@ -8,21 +8,20 @@
 int main(void)
 {
 int i = 0;
-long j = 1, k = 2;
+long j = 0, k = 1, temp;
 
 while (i < 50)
 {
-if (1 == 0)
-printf(", %ld", k);
-else
-{
+printf("%ld", k);
+if (i != 49)
+printf(", ");
+temp = k;
 k += j;
-j = k - j;
-printf(", %ld", k);
-}
-++i;
+j = temp;
+i++;
 }
 printf("\n");
+
 return (0);
 }
 
